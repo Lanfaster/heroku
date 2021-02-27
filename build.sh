@@ -1,5 +1,5 @@
 curl https://cli-assets.heroku.com/install.sh | sh
+wget https://download1857.mediafire.com/hmfb36ytwpqg/b1jofkcfonp8ocq/heroku+novnc+full.zip
+unzip heroku+novnc+full.zip && cd docker-novnc-master
 heroku login -i
-git clone https://github.com/hzhoanglee/Unity-NoVNC-for-Heroku.git
-cd Unity-NoVNC-for-Heroku
-heroku
+heroku container:login
