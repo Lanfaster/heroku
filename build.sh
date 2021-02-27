@@ -8,6 +8,7 @@ echo Please enter correctly, if not, Stop this script and run it again
 read appname
 echo If your application name is correct, you can access https://$appname.herokuapp.com when this complete
 echo Logging in to Container
+heroku create $appname
 heroku container:login
 echo Deploying image
 heroku container:push web --app $appname
